@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">Expenditure Calculator</h1>
+    <div class="container">
+      <h3 class="greet">
+        Welcome ,
+        <input
+          id="name-input"
+          type="text"
+          placeholder="Enter your expenditure..."
+        />
+      </h3>
+      <form>
+        <div class="double">
+          <div class="form-harcama">
+            <label>Expenditure :</label>
+            <input
+              id="harcama"
+              type="text"
+              placeholder="Enter your expenditure..."
+            />
+          </div>
+          <div class="form-fiyat">
+            <label>Price :</label>
+            <input id="fiyat" type="number" placeholder="Enter your price..." />
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-durum">
+            <input id="status-input" type="checkbox" />
+            <label for="status-input">Paid</label>
+          </div>
+          <button class="ekle-btn">Add</button>
+        </div>
+      </form>
+      <!-- toplama ifadesi -->
+      <div class="toplam">
+        Total Expenditure : <span id="toplam-bilgi">0</span> &#8378;
+      </div>
+
+      <select id="filter-select">
+        <option value="all">Hepsi</option>
+        <option value="payed">Ödendi</option>
+        <option value="not-payed">Ödenmedi</option>
+      </select>
+
+
+      <!-- liste -->
+      <div class="liste"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
